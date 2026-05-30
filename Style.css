@@ -1,0 +1,81 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ANIMATED BACKGROUND */
+body {
+    color: white;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #1b2a49, #3a7bd5);
+    background-size: 400% 400%;
+    animation: bgAnimation 10s ease infinite;
+    padding: 20px;
+}
+
+/* BACKGROUND ANIMATION */
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+/* PROFILE IMAGE */
+img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+    transition: 0.5s;
+}
+
+/* IMAGE HOVER EFFECT */
+img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* TEXT AREA */
+.info {
+    max-width: 400px;
+}
+
+/* HEADINGS */
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 15px;
+}
+
+/* PARAGRAPH */
+p {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* CONTACT NUMBER STYLE */
+h3 {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 5px 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
